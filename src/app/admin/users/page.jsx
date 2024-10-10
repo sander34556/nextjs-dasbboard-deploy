@@ -67,7 +67,7 @@ function AdminUserPage() {
                                         </thead>
                                         <tbody>
                                             {allUsersData?.map(val => (
-                                                <tr>
+                                                <tr key={val._id}>
                                                     <td className='p-5'>{val._id}</td>
                                                     <td className='p-5'>{val.name}</td>
                                                     <td className='p-5'>{val.email}</td>
